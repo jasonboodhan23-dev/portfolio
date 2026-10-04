@@ -451,7 +451,7 @@
       .item {
         width: 120px;
         height: 120px;
-        font-size: 80px;
+        font-size: 120px;
         text-align: center;
         line-height: 120px;
         position: absolute;
@@ -480,7 +480,7 @@
       .item12 { animation-delay: calc(30s / 12 * (12 - 12) * -1); }
 
       .skills-listed {
-        font-size: 2rem;
+        font-size: 3rem;
         display: flex;
         flex-wrap: wrap;
         padding: 2rem 0;
