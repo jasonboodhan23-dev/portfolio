@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason's Portfolio Website</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  <body>
+
+    <div class="intro-overlay" id="intro">
+      <div class="intro-content">
+        <h1>< Hello / ></h1>
+      </div>
+    </div>
+
+    <header class="header">
+      <a href="#home" class="logo"> < Jason <span>Boodhan</span> / ></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Goals</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>I'm <span>Jason</span></h1>
+        <h2>I'm a self-taught <span>Software Engineer</span></h2>
+        <p>
+          I do full-stack JavaScript web development. I am originally from Guyana, South America, and I now live in 🗽 New York. Thank you 😊 for visiting my Portfolio, and if you want to see my work please scroll down or click the projects button. <br><br> My Email: <em class="my-email">jasonboodhan23@gmail.com</em>
+        </p>
+
+        <div class="social-icons">
+          <a href="https://github.com/jasonboodhan23-dev" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jason-boodhan-16b63a433" target="_blank">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#" class="btn">Resume</a>
+          <a href="#projects" class="btn btn-secondary">Projects</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="./the-image.png" alt="Profile Picture" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./the-image.png" alt="About Picture" />
+      </div>
+
+      <div class="about-content">
+        <h2>About <span>Me</span></h2>
+        <p>
+          I'm a person that likes problem-solving and learning new things. I use the JavaScript web stack to build my projects, but I am also comfortable with a wide array of programming languages and tools. I enjoy taking ideas from concept to reality, figuring out the hard problems along the way, and constantly leveling up my skills through new challenges.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Goals</h2>
+
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-book-open"></i>
+            <h4>Learn</h4>
+            <p>
+              Always trying to add to my knowledge/skills, and stay updated with the current standards of Software Engineering.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-wrench"></i>
+            <h4>Build</h4>
+            <p>
+              Turn problems into practical software solutions by choosing the right strategy.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-trending-up"></i>
+            <h4>Improve</h4>
+            <p>
+              Become a better iteration of myself than my previous version self. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="skills" id="skills">
+      <h2 class="heading">Skills</h2>
+
+
+      <div class="skills-listed">
+        <span>HTML </span>
+        <span class="even">CSS </span>
+        <span>JavaScript </span>
+        <span class="even">Tailwind CSS </span>
+        <span>React.js </span>
+        <span class="even">MongoDB </span>
+        <span>Node.js </span>
+        <span class="even">TypeScript </span>
+        <span>PostgreSQL </span>
+        <span class="even">Git </span>
+        <span>Docker </span>
+        <span class="even">GitHub </span>
+        <span>Next.js </span>
+      </div>
+
+      <div class="wrapper">
+        <i class="bx bxl-html5 item item1"></i>
+        <i class="bx bxl-css3 item item2"></i>
+        <i class="bx bxl-javascript item item3"></i>
+        <i class="bx bxl-tailwind-css item item4"></i>
+        <i class="bx bxl-react item item5"></i>
+        <i class="bx bxl-mongodb item item6"></i>
+        <i class="bx bxl-nodejs item item7"></i>
+        <i class="bx bxl-typescript item item8"></i>
+        <i class="bx bxl-postgresql item item9"></i>
+        <i class="bx bxl-git item item10"></i>
+        <i class="bx bxl-docker item item11"></i>
+        <i class="bx bxl-github item item12"></i>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
+
+      <!-- 10 Pagination Buttons -->
+      <div class="pagination-nav" id="pagination-nav"></div>
+
+      <!-- 4 Project Cards Grid -->
+      <div class="projects-box" id="projects-box"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+
+      <form action="#">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Subject" />
+          </div>
+        </div>
+
+        <div class="input-group-2">
+          <textarea
+            placeholder="Your Message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <button id="scrollToTop" aria-label="Scroll to top">
+      ↑
+    </button>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://github.com/jasonboodhan23-dev" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jason-boodhan-16b63a433" target="_blank">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+      </div>
+
+      <ul class="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Goals</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+
+      <p class="bottomtext"><em class="my-email">jasonboodhan23@gmail.com</em></p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
