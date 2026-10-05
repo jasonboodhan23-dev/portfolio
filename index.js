@@ -258,7 +258,7 @@ function createBlogCard(blog) {
           ${blog.date}
         </span>
 
-        <span class="blog-carousel-meta-dot"></span>
+        
 
         <span>
           ${blog.readTime}
@@ -279,7 +279,8 @@ function createBlogCard(blog) {
 
       <a
         href="${blog.link}"
-        class="blog-carousel-read"
+        class="blog-carousel-read btn btn-secondary"
+        target="_blank"
       >
 
         Read article
