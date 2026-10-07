@@ -303,47 +303,110 @@
         color: #ffffff;
       }
 
-      .about {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10rem;
-        background-color: var(--bg-color);
-      }
+      
 
-      /* Glow effect and animation added to About Image */
-      .about-img img {
-        width: 24vw;
-        border-radius: 15%;
-        transition: 0.4s ease-in-out;
-        object-fit: cover;
-        filter: grayscale(60%);
-        margin-bottom: 2rem;
-      }
+.about {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 12rem 2rem 8rem;
+  background: var(--bg-color);
+}
 
-      .about-img img:hover {
-        box-shadow: 0 0 25px var(--main-color),
-                    0 0 50px var(--main-color);
-        transform: scale(1.02);
-        filter: grayscale(0%);
-      }
+.about-content h2 {
+  margin: 0 16rem 4rem;
+  font-size: clamp(5rem, 11vw, 10rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  font-weight: 700;
+}
 
-      .about-content h2 {
-        font-size: 10.5rem;
-        text-align: left;
-        margin-bottom: 4.444rem;
-      }
+.post-img {
+  margin: 0 16rem 4rem;
+}
 
-      .about-content p {
-        font-size: 3.7rem;
-        font-weight: 300;
-        line-height: 1.2;
-        margin-bottom: 3rem;
-      }
+.post-img img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+}
 
-      .about-content .btn {
-        margin: 3rem 0;
-      }
+.my-post-info-data {
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin: 0 16rem 1rem;
+}
+
+.last-info-data {
+  margin-bottom: 6rem;
+}
+
+
+
+.about-content p {
+  max-width: 1200px;
+  margin: 0 16rem 4rem;
+  font-size: clamp(3rem, 5vw, 4rem);
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.about-content .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 15rem 1.5rem 6rem;
+  }
+
+  .about-content h2 {
+    font-size: clamp(4.5rem, 18vw, 7rem);
+    line-height: 0.95;
+    margin-bottom: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+
+  .post-img {
+    margin-bottom: 4rem;
+  }
+}
+
+
+/* Small phones */
+
+@media (max-width: 480px) {
+  .about {
+    padding: 15rem 1.25rem 5rem;
+  }
+
+  .about-content h2 {
+    font-size: 4.5rem;
+  }
+
+  .about-content p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+}
+
+
+
 
       ::-webkit-scrollbar {
         width: 10px;

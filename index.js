@@ -630,23 +630,4 @@ blogImages.forEach(image => {
    OPTIONAL: PAUSE WHEN TAB IS NOT VISIBLE
 ============================================================ */
 
-document.addEventListener(
-  "visibilitychange",
-  () => {
 
-    if (
-      document.hidden
-    ) {
-
-      blogCarouselTrack.style.animationPlayState =
-        "paused";
-
-    } else {
-
-      blogCarouselTrack.style.animationPlayState =
-        "running";
-
-    }
-
-  }
-);
