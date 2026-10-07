@@ -538,6 +538,10 @@
         box-shadow: 0 0 20px var(--main-color);
       }
 
+      #projects h2 {
+        margin-top: 1rem;
+      }
+
       .projects-box {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

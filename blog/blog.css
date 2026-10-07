@@ -304,52 +304,53 @@
       }
 
       
-
 .about {
   width: min(1100px, 100%);
   margin: 0 auto;
-  padding: 12rem 2rem 8rem;
+  padding: 12rem 2rem 6rem;
   background: var(--bg-color);
+  box-sizing: border-box;
 }
 
 .about-content h2 {
-  margin: 0 16rem 4rem;
-  font-size: clamp(5rem, 11vw, 10rem);
+  margin: 0 0 4rem;
+  font-size: clamp(3rem, 8vw, 7rem);
   line-height: 0.95;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.05em;
   font-weight: 700;
 }
 
 .post-img {
-  margin: 0 16rem 4rem;
+  width: 100%;
+  margin: 0 0 4rem;
 }
 
 .post-img img {
   width: 100%;
+  height: auto;
   display: block;
   border-radius: 16px;
   object-fit: cover;
 }
 
 .my-post-info-data {
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  padding: 0;
   font-weight: 400;
   letter-spacing: 0.01em;
-  margin: 0 16rem 1rem;
+  margin: 0 0 1rem;
 }
 
 .last-info-data {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
-
-
 .about-content p {
-  max-width: 1200px;
-  margin: 0 16rem 4rem;
-  font-size: clamp(3rem, 5vw, 4rem);
-  line-height: 1.75;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 0 3rem;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  line-height: 1.7;
   font-weight: 400;
   letter-spacing: 0.01em;
 }
@@ -359,31 +360,44 @@
   align-items: center;
   gap: 0.6rem;
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 
-/* Mobile */
+/* Tablet */
 
 @media (max-width: 768px) {
   .about {
-    padding: 15rem 1.5rem 6rem;
+    padding: 8rem 1.5rem 5rem;
   }
 
   .about-content h2 {
-    font-size: clamp(4.5rem, 18vw, 7rem);
-    line-height: 0.95;
+    font-size: clamp(2.75rem, 10vw, 5rem);
+    line-height: 1;
+    margin-bottom: 2.5rem;
+  }
+
+  .post-img {
+    margin-bottom: 3rem;
+  }
+
+  .post-img img {
+    border-radius: 12px;
+  }
+
+  .my-post-info-data {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .last-info-data {
     margin-bottom: 3rem;
   }
 
   .about-content p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin-bottom: 3rem;
-  }
-
-  .post-img {
-    margin-bottom: 4rem;
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -392,18 +406,42 @@
 
 @media (max-width: 480px) {
   .about {
-    padding: 15rem 1.25rem 5rem;
+    padding: 6rem 1.25rem 4rem;
   }
 
   .about-content h2 {
-    font-size: 4.5rem;
+    font-size: clamp(2.25rem, 12vw, 3.5rem);
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  .post-img {
+    margin-bottom: 2.5rem;
+  }
+
+  .post-img img {
+    border-radius: 10px;
+  }
+
+  .my-post-info-data {
+    font-size: 0.95rem;
+  }
+
+  .last-info-data {
+    margin-bottom: 2.5rem;
   }
 
   .about-content p {
-    font-size: 1.4rem;
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .about-content .btn {
+    font-size: 1rem;
   }
 }
+
 
 
 

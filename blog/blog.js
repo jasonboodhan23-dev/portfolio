@@ -181,7 +181,6 @@ function createBlogCard(blog) {
       <a
         href="${blog.link}"
         class="blog-carousel-read btn btn-secondary"
-        target="_blank"
       >
 
         Read article

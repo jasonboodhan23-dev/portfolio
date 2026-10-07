@@ -123,7 +123,7 @@ const blogsData = [
     date: "Oct 02, 2026",
     readTime: "6 min read",
     image: "https://picsum.photos/seed/blog-portfolio/900/600",
-    link: "#"
+    link: "./blog/posts/posts-1.html"
   },
 
   {
@@ -135,7 +135,7 @@ const blogsData = [
     date: "Sep 25, 2026",
     readTime: "8 min read",
     image: "https://picsum.photos/seed/blog-css/900/600",
-    link: "#"
+    link: "./blog/posts/posts-2.html"
   },
 
   {
@@ -147,7 +147,7 @@ const blogsData = [
     date: "Sep 18, 2026",
     readTime: "7 min read",
     image: "https://picsum.photos/seed/blog-javascript/900/600",
-    link: "#"
+    link: "./blog/posts/posts-3.html"
   },
 
   {
@@ -159,7 +159,7 @@ const blogsData = [
     date: "Sep 10, 2026",
     readTime: "5 min read",
     image: "https://picsum.photos/seed/blog-design/900/600",
-    link: "#"
+    link: "./blog/posts/posts-4.html"
   },
 
   {
@@ -171,7 +171,7 @@ const blogsData = [
     date: "Sep 03, 2026",
     readTime: "9 min read",
     image: "https://picsum.photos/seed/blog-performance/900/600",
-    link: "#"
+    link: "./blog/posts/posts-5.html"
   },
 
   {
@@ -183,7 +183,7 @@ const blogsData = [
     date: "Aug 27, 2026",
     readTime: "6 min read",
     image: "https://picsum.photos/seed/blog-lessons/900/600",
-    link: "#"
+    link: "./blog/posts/posts-6.html"
   },
 
   {
@@ -195,7 +195,7 @@ const blogsData = [
     date: "Aug 20, 2026",
     readTime: "10 min read",
     image: "https://picsum.photos/seed/blog-ui/900/600",
-    link: "#"
+    link: "./blog/posts/posts-7.html"
   },
 
   {
@@ -207,7 +207,7 @@ const blogsData = [
     date: "Aug 12, 2026",
     readTime: "5 min read",
     image: "https://picsum.photos/seed/blog-reflection/900/600",
-    link: "#"
+    link: "./blog/posts/posts-8.html"
   }
 ];
 
@@ -280,7 +280,6 @@ function createBlogCard(blog) {
       <a
         href="${blog.link}"
         class="blog-carousel-read btn btn-secondary"
-        target="_blank"
       >
 
         Read article
