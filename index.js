@@ -29,7 +29,7 @@
           image: `https://picsum.photos/seed/project${i}/500/300`,
           githubLink: "#",
           liveLink: "#",
-          videoLink: "#",
+          videoLink: "https://www.pexels.com/video/aerial-view-of-sunset-over-dense-woodland-36948285/",
           docsLink: "#"
         });
       }
@@ -68,10 +68,10 @@
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <div class="card-buttons">
-              <a href="${project.githubLink}" class="btn"><i class='bx bxl-github'></i> GitHub</a>
-              <a href="${project.liveLink}" class="btn btn-secondary"><i class='bx bx-link-external'></i> Live</a>
-              <a href="${project.videoLink}" class="btn btn-secondary"><i class='bx bx-play-circle'></i> Video</a>
-              <a href="${project.docsLink}" class="btn"><i class='bx bx-file'></i> Docs</a>
+              <a href="${project.codeLink}" class="btn"><i class='bx bx-code-alt'></i> Code</a>
+              <a href="${project.liveLink}" class="btn"><i class='bx bx-link-external'></i> Live</a>
+              <a href="${project.docsLink}" class="btn btn-secondary"><i class='bx bx-edit'></i> Article</a>
+              <a href="${project.videoLink}" target="_blank" class="btn btn-secondary"><i class='bx bx-play-circle'></i> Video</a>
             </div>
           `;
           projectsBox.appendChild(card);
