@@ -234,8 +234,8 @@
       }
 
       .home-img img:hover {
-        box-shadow: 0 0 75px var(--main-color),
-                    0 0 150px var(--main-color);
+        box-shadow: 0 0 150px var(--main-color),
+                    0 0 300px var(--main-color);
         transform: scale(1.02);
         filter: grayscale(0%);
         cursor: pointer;
