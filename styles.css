@@ -175,7 +175,7 @@
           position: relative;
           isolation: isolate;
 
-          /* Background image source: ORIGINAL_IMAGE_URL
+          /* Background image source: https://www.pexels.com/photo/tropical-palm-tree-silhouette-at-sunset-37615014/
           Edited by me. */
 
           background: url("./assets/sunset.png") center / cover no-repeat;
@@ -187,8 +187,8 @@
           inset: 0;
           background: linear-gradient(
               90deg,
-              rgba(0, 0, 0, 0.7),
-              rgba(0, 0, 0, 0.2)
+              rgba(0, 0, 0, 0.9),
+              rgba(0, 0, 0, 0.333)
           );
           z-index: -1;
       }
@@ -206,6 +206,7 @@
         margin-top: 2rem;
         margin-bottom: 1rem;
         line-height: 1.2;
+        text-transform: uppercase;
       }
 
       .home-content h2 {
@@ -245,16 +246,16 @@
 
       .home-img img {
         width: 32vw;
-        border-radius: 15%;
+        border-radius: 32%;
         transition: 0.4s ease-in-out;
         object-fit: cover;
         filter: grayscale(70%);
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
       }
 
       .home-img img:hover {
-        box-shadow: 0 0 150px var(--main-color),
-                    0 0 300px var(--main-color);
+        box-shadow: 0 0 25px var(--main-color),
+                    0 0 50px var(--main-color);
         transform: scale(1.02);
         filter: grayscale(0%);
       }
@@ -334,7 +335,7 @@
       /* Glow effect and animation added to About Image */
       .about-img img {
         width: 24vw;
-        border-radius: 15%;
+        border-radius: 10%;
         transition: 0.4s ease-in-out;
         object-fit: cover;
         filter: grayscale(60%);
@@ -490,23 +491,24 @@
         color: var(--text-color);
       }
 
-      .myhtml:hover {
-        transition: color 0.8s ease-in-out;
-        color: var(--text-color);
+      .item14 {
+        font-size: 100px;
       }
 
-      .item1 { animation-delay: calc(30s / 12 * (12 - 1) * -1); }
-      .item2 { animation-delay: calc(30s / 12 * (12 - 2) * -1); }
-      .item3 { animation-delay: calc(30s / 12 * (12 - 3) * -1); }
-      .item4 { animation-delay: calc(30s / 12 * (12 - 4) * -1); }
-      .item5 { animation-delay: calc(30s / 12 * (12 - 5) * -1); }
-      .item6 { animation-delay: calc(30s / 12 * (12 - 6) * -1); }
-      .item7 { animation-delay: calc(30s / 12 * (12 - 7) * -1); }
-      .item8 { animation-delay: calc(30s / 12 * (12 - 8) * -1); }
-      .item9 { animation-delay: calc(30s / 12 * (12 - 9) * -1); }
-      .item10 { animation-delay: calc(30s / 12 * (12 - 10) * -1); }
-      .item11 { animation-delay: calc(30s / 12 * (12 - 11) * -1); }
-      .item12 { animation-delay: calc(30s / 12 * (12 - 12) * -1); }
+      .item1 { animation-delay: calc(30s / 14 * (14 - 1) * -1); }
+      .item2 { animation-delay: calc(30s / 14 * (14 - 2) * -1); }
+      .item3 { animation-delay: calc(30s / 14 * (14 - 3) * -1); }
+      .item4 { animation-delay: calc(30s / 14 * (14 - 4) * -1); }
+      .item5 { animation-delay: calc(30s / 14 * (14 - 5) * -1); }
+      .item6 { animation-delay: calc(30s / 14 * (14 - 6) * -1); }
+      .item7 { animation-delay: calc(30s / 14 * (14 - 7) * -1); }
+      .item8 { animation-delay: calc(30s / 14 * (14 - 8) * -1); }
+      .item9 { animation-delay: calc(30s / 14 * (14 - 9) * -1); }
+      .item10 { animation-delay: calc(30s / 14 * (14 - 10) * -1); }
+      .item11 { animation-delay: calc(30s / 14 * (14 - 11) * -1); }
+      .item12 { animation-delay: calc(30s / 14 * (14 - 12) * -1); }
+      .item13 { animation-delay: calc(30s / 14 * (14 - 13) * -1); }
+      .item14 { animation-delay: calc(30s / 14 * (14 - 14) * -1); }
 
       .stack-listed {
         font-size: 3rem;
