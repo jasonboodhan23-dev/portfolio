@@ -167,11 +167,30 @@
       }
 
       .home {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10rem;
-        background-color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10rem;
+
+          position: relative;
+          isolation: isolate;
+
+          /* Background image source: ORIGINAL_IMAGE_URL
+          Edited by me. */
+
+          background: url("./assets/sunset.png") center / cover no-repeat;
+      }
+
+      .home::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 0.7),
+              rgba(0, 0, 0, 0.2)
+          );
+          z-index: -1;
       }
 
       .home-content {
@@ -309,6 +328,8 @@
         gap: 10rem;
         background-color: var(--bg-color);
       }
+
+
 
       /* Glow effect and animation added to About Image */
       .about-img img {
