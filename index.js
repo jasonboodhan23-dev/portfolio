@@ -630,4 +630,15 @@ blogImages.forEach(image => {
    OPTIONAL: PAUSE WHEN TAB IS NOT VISIBLE
 ============================================================ */
 
+const elements = document.querySelectorAll(".linked-hover-html");
+
+elements.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elements.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elements.forEach(el => el.classList.remove("active"));
+  });
+});
 
