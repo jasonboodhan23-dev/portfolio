@@ -485,15 +485,78 @@
         color: transparent;
       }
 
-      .item:hover {
-        
-        
-      }
 
       .linked-hover-html.active {
         color: var(--text-color);
         transition: color 0.8s ease-in-out;
       }
+
+      .linked-hover-css.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-javascript.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-tailwind.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-react.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-mongodb.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-nodejs.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-express.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-typescript.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-postgresql.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-git.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-docker.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-github.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+      .linked-hover-nextjs.active {
+        color: var(--text-color);
+        transition: color 0.8s ease-in-out;
+      }
+
+
 
       .item14 {
         font-size: 100px;

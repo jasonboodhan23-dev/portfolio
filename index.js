@@ -5,7 +5,7 @@
         // Wait 2 1/2 second before starting the exit animation
         setTimeout(() => {
           intro.classList.add("hidden");
-        }, 2500);
+        }, 500);
       });
 
 
@@ -630,6 +630,7 @@ blogImages.forEach(image => {
    OPTIONAL: PAUSE WHEN TAB IS NOT VISIBLE
 ============================================================ */
 
+// html
 const elements = document.querySelectorAll(".linked-hover-html");
 
 elements.forEach(element => {
@@ -641,4 +642,256 @@ elements.forEach(element => {
     elements.forEach(el => el.classList.remove("active"));
   });
 });
+
+// css
+const elementsTwo = document.querySelectorAll(".linked-hover-css");
+
+elementsTwo.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsTwo.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsTwo.forEach(el => el.classList.remove("active"));
+  });
+});
+
+
+/* HTML
+CSS
+JavaScript
+Tailwind CSS
+React.js
+MongoDB
+Node.js
+Express.js
+TypeScript
+PostgreSQL
+Git
+Docker
+GitHub
+Next.js
+
+*/
+
+// JavaScript
+const elementsThree = document.querySelectorAll(".linked-hover-javascript");
+
+elementsThree.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsThree.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsThree.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// Tailwind CSS
+const elementsFour = document.querySelectorAll(".linked-hover-tailwind");
+
+elementsFour.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsFour.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsFour.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// React.js
+const elementsFive = document.querySelectorAll(".linked-hover-react");
+
+elementsFive.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsFive.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsFive.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// MongoDB
+const elementsSix = document.querySelectorAll(".linked-hover-mongodb");
+
+elementsSix.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsSix.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsSix.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// Node.js
+const elementsSeven = document.querySelectorAll(".linked-hover-nodejs");
+
+elementsSeven.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsSeven.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsSeven.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// Express.js
+const elementsEight = document.querySelectorAll(".linked-hover-express");
+
+elementsEight.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsEight.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsEight.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// TypeScript
+const elementsNine = document.querySelectorAll(".linked-hover-typescript");
+
+elementsNine.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsNine.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsNine.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// PostgreSQL
+const elementsTen = document.querySelectorAll(".linked-hover-postgresql");
+
+elementsTen.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsTen.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsTen.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// Git
+const elementsEleven = document.querySelectorAll(".linked-hover-git");
+
+elementsEleven.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsEleven.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsEleven.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// Docker
+const elementsTwelve = document.querySelectorAll(".linked-hover-docker");
+
+elementsTwelve.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsTwelve.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsTwelve.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// GitHub
+const elementsThirteen = document.querySelectorAll(".linked-hover-github");
+
+elementsThirteen.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsThirteen.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsThirteen.forEach(el => el.classList.remove("active"));
+  });
+});
+
+// Next.js
+const elementsFourteen = document.querySelectorAll(".linked-hover-nextjs");
+
+elementsFourteen.forEach(element => {
+  element.addEventListener("mouseenter", () => {
+    elementsFourteen.forEach(el => el.classList.add("active"));
+  });
+
+  element.addEventListener("mouseleave", () => {
+    elementsFourteen.forEach(el => el.classList.remove("active"));
+  });
+});
+
+/*
+.linked-hover-javascript
+.linked-hover-tailwind
+.linked-hover-react
+.linked-hover-mongodb
+.linked-hover-nodejs
+.linked-hover-express
+.linked-hover-typescript
+.linked-hover-postgresql
+.linked-hover-git
+.linked-hover-docker
+.linked-hover-github
+.linked-hover-nextjs
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
