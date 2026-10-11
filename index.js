@@ -18,94 +18,572 @@
         navbar.classList.toggle('active');
       };
 
-      // --- Projects Dynamic Setup with Unsplash Placeholders & 4 Buttons ---
-      const projectsData = [];
-      for (let i = 1; i <= 6; i++) {
-        projectsData.push({
-          id: i,
-          title: `Project ${i}`,
-          description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ipsam error consequuntur est ut eaque.`,
-          // Unsplash placeholder images via Picsum/Unsplash API
-          image: `https://picsum.photos/seed/project${i}/500/300`,
-          githubLink: "#",
-          liveLink: "#",
-          videoLink: "https://www.pexels.com/video/aerial-view-of-sunset-over-dense-woodland-36948285/",
-          docsLink: "#"
-        });
+    /* ==========================================
+       CATEGORY 1: WEB DEVELOPMENT
+       ========================================== */
+
+    const category1Projects = [
+      {
+        id: 1,
+        title: "Personal Portfolio",
+        description: "A responsive portfolio showcasing skills, projects, and experience.",
+        image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 2,
+        title: "Business Website",
+        description: "A professional website with responsive layouts and clear calls to action.",
+        image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 3,
+        title: "Agency Landing Page",
+        description: "A modern landing page featuring services, testimonials, and contact details.",
+        image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
       }
+    ];
 
-      const projectsPerPage = 3;
-      const totalPages = 2;
-      let currentPage = 1;
 
-      const paginationNav = document.getElementById("pagination-nav");
-      const projectsBox = document.getElementById("projects-box");
+    /* ==========================================
+       CATEGORY 2: JAVASCRIPT PROJECTS
+       ========================================== */
 
-      // Render Pagination Buttons
-      function renderPagination() {
-        paginationNav.innerHTML = "";
-        for (let i = 1; i <= totalPages; i++) {
-          const btn = document.createElement("button");
-          btn.className = `page-btn ${i === currentPage ? "active" : ""}`;
-          btn.innerText = `Set ${i}`;
-          btn.onclick = () => changePage(i);
-          paginationNav.appendChild(btn);
-        }
+    const category2Projects = [
+      {
+        id: 4,
+        title: "Task Manager",
+        description: "Organize tasks, track completion, and manage daily productivity.",
+        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 5,
+        title: "Interactive Quiz",
+        description: "A browser quiz with multiple-choice questions and score tracking.",
+        image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 6,
+        title: "Expense Tracker",
+        description: "Track spending and organize expenses in a simple interface.",
+        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
       }
+    ];
 
 
-      // Render 4 Project Cards with 4 Action Buttons each
-      function renderProjects() {
-        projectsBox.innerHTML = "";
+    /* ==========================================
+       CATEGORY 3: REACT PROJECTS
+       ========================================== */
+
+    const category3Projects = [
+      {
+        id: 7,
+        title: "React Dashboard",
+        description: "A reusable component-based dashboard with responsive layouts.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 8,
+        title: "Recipe Finder",
+        description: "Explore recipes through a searchable collection of meals.",
+        image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 9,
+        title: "Movie Explorer",
+        description: "Browse movies through an organized interface with searchable titles.",
+        image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      }
+    ];
+
+
+    /* ==========================================
+       CATEGORY 4: PYTHON PROJECTS
+       ========================================== */
+
+    const category4Projects = [
+      {
+        id: 10,
+        title: "Python Data Analyzer",
+        description: "Analyze datasets and summarize useful information with Python.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 11,
+        title: "File Organizer",
+        description: "Automate file organization by sorting files into appropriate folders.",
+        image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 12,
+        title: "Python Web Scraper",
+        description: "Collect and organize publicly available web data for analysis.",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      }
+    ];
+
+
+    /* ==========================================
+       CATEGORY 5: UI/UX DESIGN
+       ========================================== */
+
+    const category5Projects = [
+      {
+        id: 13,
+        title: "Mobile App Design",
+        description: "A mobile-first interface designed around intuitive navigation.",
+        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 14,
+        title: "Dashboard Wireframe",
+        description: "A clean dashboard layout with clear visual hierarchy and reusable components.",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 15,
+        title: "Shopping App Concept",
+        description: "A shopping experience designed around product discovery and usability.",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      }
+    ];
+
+
+    /* ==========================================
+       CATEGORY 6: E-COMMERCE
+       ========================================== */
+
+    const category6Projects = [
+      {
+        id: 16,
+        title: "Online Store",
+        description: "A storefront with product listings, categories, and shopping actions.",
+        image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 17,
+        title: "Sneaker Shop",
+        description: "A footwear store concept featuring product photography and product cards.",
+        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 18,
+        title: "Fashion Boutique",
+        description: "An elegant online boutique with editorial imagery and a responsive layout.",
+        image: "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      }
+    ];
+
+
+    /* ==========================================
+       CATEGORY 7: GAME DEVELOPMENT
+       ========================================== */
+
+    const category7Projects = [
+      {
+        id: 19,
+        title: "Memory Card Game",
+        description: "Find matching pairs in an interactive browser-based memory game.",
+        image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 20,
+        title: "Retro Arcade",
+        description: "A retro-inspired game concept featuring classic arcade visuals.",
+        image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 21,
+        title: "Puzzle Challenge",
+        description: "A puzzle game concept focused on logic and progressive challenges.",
+        image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      }
+    ];
+
+
+    /* ==========================================
+       CATEGORY 8: API & DATA PROJECTS
+       ========================================== */
+
+    const category8Projects = [
+      {
+        id: 22,
+        title: "Weather Dashboard",
+        description: "A weather interface for presenting forecasts and conditions.",
+        image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 23,
+        title: "Country Explorer",
+        description: "Explore countries through searchable geographical information.",
+        image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 24,
+        title: "Data Visualization",
+        description: "Present statistics and trends through an easy-to-understand interface.",
+        image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      }
+    ];
+
+
+    /* ==========================================
+       CATEGORY 9: AUTOMATION TOOLS
+       ========================================== */
+
+    const category9Projects = [
+      {
+        id: 25,
+        title: "Markdown Editor",
+        description: "Write and preview formatted Markdown content in one interface.",
+        image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 26,
+        title: "Productivity Timer",
+        description: "A focus timer concept for managing work sessions and breaks.",
+        image: "https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 27,
+        title: "Password Generator",
+        description: "A utility for generating random passwords with configurable options.",
+        image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      }
+    ];
+
+
+    /* ==========================================
+       CATEGORY 10: CREATIVE PROJECTS
+       ========================================== */
+
+    const category10Projects = [
+      {
+        id: 28,
+        title: "Photography Gallery",
+        description: "A responsive photography portfolio highlighting images and composition.",
+        image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 29,
+        title: "Digital Art Showcase",
+        description: "A visual gallery for presenting digital artwork and creative experiments.",
+        image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 30,
+        title: "Music Player Concept",
+        description: "A music player interface with track information and playback controls.",
+        image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 30,
+        title: "Photography Gallery",
+        description: "A responsive photography portfolio highlighting images and composition.",
+        image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 30,
+        title: "Digital Art Showcase",
+        description: "A visual gallery for presenting digital artwork and creative experiments.",
+        image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      },
+      {
+        id: 30,
+        title: "Music Player Concept",
+        description: "A music player interface with track information and playback controls.",
+        image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80",
+        codeLink: "#",
+        liveLink: "#",
+        docsLink: "#",
+        videoLink: "#"
+      }
+    ];
+
+
+    /* ==========================================
+       CATEGORY NAMES AND ARRAYS
+       ========================================== */
+
+    const projectCategories = [
+      { name: "Web Development", projects: category1Projects },
+      { name: "JavaScript Projects", projects: category2Projects },
+      { name: "React Projects", projects: category3Projects },
+      { name: "Python Projects", projects: category4Projects },
+      { name: "UI/UX Design", projects: category5Projects },
+      { name: "E-commerce", projects: category6Projects },
+      { name: "Game Development", projects: category7Projects },
+      { name: "API & Data Projects", projects: category8Projects },
+      { name: "Automation Tools", projects: category9Projects },
+      { name: "Creative Projects", projects: category10Projects }
+    ];
+
+    const projectsPerPage = 6;
+    let currentPage = 1;
+
+    const paginationNav = document.getElementById("pagination-nav");
+    const projectsBox = document.getElementById("projects-box");
+
+
+    /* ==========================================
+       RENDER CATEGORY BUTTONS
+       ========================================== */
+
+    function renderPagination() {
+      paginationNav.innerHTML = "";
+
+      projectCategories.forEach((category, index) => {
+        const pageNumber = index + 1;
+        const btn = document.createElement("button");
+
+        btn.type = "button";
+        btn.className = `page-btn ${pageNumber === currentPage ? "active" : ""}`;
+        btn.textContent = category.name;
+        btn.setAttribute("aria-label", `Show ${category.name}`);
         
-        const startIndex = (currentPage - 1) * projectsPerPage;
-        const currentProjects = projectsData.slice(startIndex, startIndex + projectsPerPage);
-
-        currentProjects.forEach(project => {
-          const card = document.createElement("div");
-          card.className = "project-card";
-          card.innerHTML = `
-            <img src="${project.image}" alt="${project.title} Preview" />
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <div class="card-buttons">
-              <a href="${project.codeLink}" class="btn"><i class='bx bx-code-alt'></i> Code</a>
-              <a href="${project.liveLink}" class="btn"><i class='bx bx-link-external'></i> Live</a>
-              <a href="${project.docsLink}" class="btn btn-secondary"><i class='bx bx-edit'></i> Article</a>
-              <a href="${project.videoLink}" target="_blank" class="btn btn-secondary"><i class='bx bx-play-circle'></i> Video</a>
-            </div>
-          `;
-          projectsBox.appendChild(card);
-        });
-      }
-
-      function changePage(pageNumber) {
-        currentPage = pageNumber;
-        renderPagination();
-        renderProjects();
-      }
-
-      const scrollToTop = document.getElementById("scrollToTop");
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
-          scrollToTop.classList.add("show");
-        } else {
-          scrollToTop.classList.remove("show");
+        if (pageNumber === currentPage) {
+          btn.setAttribute("aria-current", "page");
         }
-      });
 
-      scrollToTop.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
+        btn.addEventListener("click", () => {
+          changePage(pageNumber);
         });
+
+        paginationNav.appendChild(btn);
       });
+    }
 
 
-      // Initial Call
+    /* ==========================================
+       RENDER PROJECT CARDS
+       ========================================== */
+
+    function renderProjects() {
+      projectsBox.innerHTML = "";
+
+      const selectedCategory = projectCategories[currentPage - 1];
+
+      if (!selectedCategory) {
+        return;
+      }
+
+      selectedCategory.projects.slice(0, projectsPerPage).forEach((project) => {
+        const card = document.createElement("div");
+        card.className = "project-card";
+
+        card.innerHTML = `
+          <img
+            src="${project.image}"
+            alt="${project.title} Preview"
+            loading="lazy"
+          />
+
+          <h3>${project.title}</h3>
+
+          <p>${project.description}</p>
+
+          <div class="card-buttons">
+            <a href="${project.codeLink}" class="btn">
+              <i class="bx bx-code-alt"></i> Code
+            </a>
+
+            <a href="${project.liveLink}" class="btn">
+              <i class="bx bx-link-external"></i> Live
+            </a>
+
+            <a href="${project.docsLink}" class="btn btn-secondary">
+              <i class="bx bx-edit"></i> Article
+            </a>
+
+            <a
+              href="${project.videoLink}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              <i class="bx bx-play-circle"></i> Video
+            </a>
+          </div>
+        `;
+
+        projectsBox.appendChild(card);
+      });
+    }
+
+
+    /* ==========================================
+       CHANGE CATEGORY
+       ========================================== */
+
+    function changePage(pageNumber) {
+      if (pageNumber < 1 || pageNumber > projectCategories.length) {
+        return;
+      }
+
+      currentPage = pageNumber;
+
       renderPagination();
       renderProjects();
+    }
+
+
+/* ==========================================
+   SCROLL-TO-TOP BUTTON
+   ========================================== */
+
+const scrollToTop = document.getElementById("scrollToTop");
+
+if (scrollToTop) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollToTop.classList.add("show");
+    } else {
+      scrollToTop.classList.remove("show");
+    }
+  });
+
+  scrollToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
+
+/* ==========================================
+   INITIALIZE
+   ========================================== */
+
+renderPagination();
+renderProjects();
 
 
 
@@ -283,7 +761,7 @@ function createBlogCard(blog) {
         class="blog-carousel-read btn btn-secondary"
       >
 
-        Read article
+        <i class='bx bx-book'></i> Read article
 
         <span class="blog-carousel-read-arrow">
           →

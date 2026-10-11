@@ -1005,61 +1005,7 @@
       }
 
 
-/* ------------------------------------------------------------
-   HEADER
------------------------------------------------------------- */
 
-.blog-carousel-header {
-
-  width: min(1100px, calc(100% - 40px));
-
-  margin: 0 auto 55px;
-
-  text-align: center;
-
-}
-
-
-.blog-carousel-eyebrow {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 8px;
-
-  margin-bottom: 14px;
-
-  color: var(--main-color);
-
-  font-size: 1.2rem;
-
-  font-weight: 600;
-
-  letter-spacing: 0.14em;
-
-  text-transform: uppercase;
-
-}
-
-
-.blog-carousel-eyebrow::before {
-
-  content: "";
-
-  width: 7px;
-
-  height: 7px;
-
-  border-radius: 50%;
-
-  background: var(--main-color);
-
-  box-shadow:
-    0 0 8px var(--main-color),
-    0 0 18px var(--main-color);
-
-}
 
 
 .blog-carousel-title {
@@ -1236,8 +1182,7 @@
 
   transform: translateY(-2px);
 
-  border-color:
-    rgba(148, 97, 253, 0.45);
+  border-color: var(--main-color);
 
   box-shadow:
     0 20px 55px rgba(0, 0, 0, 0.3),
