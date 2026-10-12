@@ -2,10 +2,10 @@
       window.addEventListener("load", () => {
         const intro = document.getElementById("intro");
 
-        // Wait 2 1/2 second before starting the exit animation
+        // Wait 2 second before starting the exit animation
         setTimeout(() => {
           intro.classList.add("hidden");
-        }, 500);
+        }, 2000);
       });
 
 
@@ -377,36 +377,6 @@
       },
       {
         id: 29,
-        title: "Digital Art Showcase",
-        description: "A visual gallery for presenting digital artwork and creative experiments.",
-        image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=900&q=80",
-        codeLink: "#",
-        liveLink: "#",
-        docsLink: "#",
-        videoLink: "#"
-      },
-      {
-        id: 30,
-        title: "Music Player Concept",
-        description: "A music player interface with track information and playback controls.",
-        image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80",
-        codeLink: "#",
-        liveLink: "#",
-        docsLink: "#",
-        videoLink: "#"
-      },
-      {
-        id: 30,
-        title: "Photography Gallery",
-        description: "A responsive photography portfolio highlighting images and composition.",
-        image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=900&q=80",
-        codeLink: "#",
-        liveLink: "#",
-        docsLink: "#",
-        videoLink: "#"
-      },
-      {
-        id: 30,
         title: "Digital Art Showcase",
         description: "A visual gallery for presenting digital artwork and creative experiments.",
         image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=900&q=80",
